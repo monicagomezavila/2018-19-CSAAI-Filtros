@@ -7,29 +7,48 @@
     <script src="filtro1.js"></script>
   </head>
   <body onload="main();">
-    <p>Imagen original</p>
-    <img src="black-hole.jpg" id="imagesrc">
-    <p>Imagen manipulada</p>
-    <canvas id="display"></canvas>
-    <br>
-    <button class = "button" type="button" id="colores">COLORES</button>
-    <p>Controlador R</p>
-    <input type="range" id="deslizadorR" min="0" max="255" value="255"/>
-    <p id="range_valueR">255</p>
+
+    <img src="generatedtext.png" id="title">
+
+    <div id = "arriba">
+        <div id = "izq">
+            <p>Imagen original</p>
+            <img src="black-hole.jpg" id="imagesrc">
+        </div>
+        <div id = "drch">
+            <p>Imagen manipulada</p>
+            <canvas id="display"></canvas>
+        </div>
+    </div>
 
     <br>
-    <p>Controlador G</p>
-    <input type="range" id="deslizadorG" min="0" max="255" value="255"/>
-    <p id="range_valueG">255</p>
 
-    <br>
-    <p>Controlador B</p>
-    <input type="range" id="deslizadorB" min="0" max="255" value="255"/>
-    <p id="range_valueB">255</p>
+    <div id = "botones">
+        <button class = "button" type="button" id="colores">COLORES</button>
+        <button class = "button" type="button" id="grises">ESCALA DE GRISES</button>
+    </div>
 
-    <br>
-    <button class = "button" type="button" id="grises">ESCALA DE GRISES</button>
-    <p id = "on_off_grey"></p>
+
+    <div id = "controladores">
+      <div id = "deslizador1">
+          <p>Controlador R</p>
+          <input type="range" id="deslizadorR" min="0" max="255" value="255"/>
+          <p id="range_valueR">255</p>
+      </div>
+
+      <div id = "deslizador2">
+          <p>Controlador G</p>
+          <input type="range" id="deslizadorG" min="0" max="255" value="255"/>
+          <p id="range_valueG">255</p>
+      </div>
+
+      <div id = "deslizador3">
+          <p>Controlador B</p>
+          <input type="range" id="deslizadorB" min="0" max="255" value="255"/>
+          <p id="range_valueB">255</p>
+      </div>
+    </div>
+
 
   </body>
 </html>
